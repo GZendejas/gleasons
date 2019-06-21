@@ -1,5 +1,70 @@
-$primary-color: #444;
+@import "config";
+@import "hidden";
 
-body {
-    background: $primary-color;
+.header {
+    background-image: linear-gradient(to bottom,  rgba(12, 12, 12, 0.2), rgba(0, 0, 0, .7) 90%),
+                      url('../img/engine.jpeg');
+    background-color: $primary-color;
+    background-size: cover;
+    // background-position-y: 25%;
+    // background-position-x: 45%;
+    background-position: bottom;
+    // border-top: 2px solid $light-text-color;
+    // border-bottom: 2px solid $light-text-color;
+    height: calc(100vh - 75px);
+    position: relative;
 }
+
+.heading-primary__container {
+    left: 50%;
+    padding: 5rem;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(-50%, -55%);
+    width: 100%;
+    
+}
+
+.heading-primary__main--1,
+.heading-primary__main--2 {
+    
+    color: $orange-color;
+    display: block;
+    font-family: 'Racing Sans One', cursive;
+    font-size: 9rem;
+    font-weight: 700;
+    letter-spacing: .6rem;
+    text-transform: uppercase;
+    // text-shadow: 1px 1px 2px darkgray;
+    
+    
+}
+
+.heading-primary__sub {
+    color: $light-text-color;
+    display: block;
+    font-size: 1.2rem;
+    letter-spacing: .5rem;
+    // text-shadow: 1px 1px 2px black;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    text-transform: uppercase;
+}
+
+.wrapper {
+    background-color: $light-text-color;
+}
+
+.footer {
+    background-color: $primary-color;
+    color: $light-text-color;
+    font-size: 1.3rem;
+    height: 1.5rem;
+    letter-spacing: .2rem;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+@import "mobile";

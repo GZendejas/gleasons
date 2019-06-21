@@ -1,0 +1,59 @@
+// sass variables
+$primary-color: #444;
+$light-text-color: #fff;
+$light-yellow-color: #efee9b;
+$orange-color: #f29d09;
+$orange-color: #e09004;
+$secondary-color: #111;
+$purple-color: #5114ad;
+$blue-color: #42c2f4;
+
+
+
+// general styling
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.body {
+    background: $primary-color;
+    box-sizing: border-box;
+    color: $light-text-color;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+
+// Media query mixins
+@mixin mediaSm {
+    @media screen and (max-width: 500px) {
+        @content;
+    }
+}
+
+@mixin mediaMd {
+    @media screen and (min-width: 501px) and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin mediaLg {
+    @media screen and (min-width: 769px) and (max-width: 1170px) {
+        @content;
+    }
+}
+
+@mixin mediaXl {
+    @media screen and (min-width: 1171px) {
+        @content;
+    }
+}
