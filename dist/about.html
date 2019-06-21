@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato|Racing+Sans+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Gleason's Auto Repair</title>
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+            <li><a href="index.html" class="logo">GLEASON'S</a></li>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="services.html">SERVICES</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <span class="open-slide">
+            <a href="javascript:void(0)" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#e09004" stroke-width="5" />
+                    <path d="M0,14 30,14" stroke="#f29d09" stroke-width="5" />
+                    <path d="M0,23 30,23" stroke="#f29d09" stroke-width="5" />
+                </svg>
+            </a>
+        </span>
+    </nav>
+    <div id="side-menu" class="side-nav">
+        <a href="javascript:void(0)" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="services.html">SERVICES</a>
+        <a href="contact.html">CONTACT</a>
+    </div>
+    <div id="main-page" class="about-main-page">
+        <h2 class="about-heading">About Us</h2>
+        <div class="wrapper about-wrapper">
+            
+            <div class="about-staff">
+                <div class="about-staff__bio-heading-box">
+                    <h3 class="about-staff__bio-heading">Joe Gleason</h3>
+                    <h4 class="about-staff__bio-sub-heading">Owner</h4>
+                </div>
+                
+                <img class="about-staff__img" src="img/crossed_arms.jpeg">
+                <div class="about-staff__bio">
+                    <p class="about-staff__bio-text">
+                        Hi, my name is Joe Gleason. After working for local dealerships for several years, I opened Gleason's Auto Repair back in 1995, with the help of my wife and brother-in-law.
+                    </p>
+                    <p class="about-staff__bio-text">
+                        Gleason's started as a family business, and it still is. My three children all work for the shop in one way or the other, and every customer is treated like family as well. If you're having trouble with your car, give us a call. We'll get it sorted out.
+                    </p>
+                </div>
+            </div>
+            <div class="about-staff">
+                <div class="about-staff__bio-heading-box">
+                    <h3 class="about-staff__bio-heading">Jerry Gleason</h3>
+                    <h4 class="about-staff__bio-sub-heading">Manager</h4>
+                </div>
+                
+                <img class="about-staff__img" src="img/adjusting.jpeg">
+                <div class="about-staff__bio">
+                    <p class="about-staff__bio-text">
+                        Jerry here. I've always had a passion for anything with an engine in it. From riding motorcycles in my teens, to racing cars as a young adult. I got into racing for the thrills. But I learned to be a good mechanic to make sure my cars were dependable and safe.
+                    </p>
+                    <p class="about-staff__bio-text">
+                        Here at Gleason's, we have a large staff of qualified mechanics to help you with any problem. Come see us!
+                    </p>
+                </div>
+            </div>
+            
+        </div>
+        <footer class="footer">
+            Copyright &copy; 2019 Guillermo Zendejas
+        </footer>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
