@@ -149,7 +149,7 @@ body {
 
 .services-heading {
   color: #e09004;
-  font-family: 'Racing Sans One', cursive;
+  font-family: 'Racing Sans One', sans-serif;
   font-size: 4rem;
   letter-spacing: .6rem;
   margin-bottom: 5rem;
@@ -229,7 +229,7 @@ body {
 .heading-primary__main--2 {
   color: #e09004;
   display: block;
-  font-family: 'Racing Sans One', cursive;
+  font-family: 'Racing Sans One', sans-serif;
   font-size: 9rem;
   font-weight: 700;
   letter-spacing: .6rem;
