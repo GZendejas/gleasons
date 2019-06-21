@@ -7,12 +7,22 @@
 
     .heading-primary__main--1,
     .heading-primary__main--2 {
-        font-size: 4rem;
+        line-height: 6rem;
     }
 
-    .heading-primary__sub,
-     {
+    .heading-primary__main--1 {
+        font-size: 4.5rem;
+        text-shadow: .5px .5px .5px white;
+    }
+
+    .heading-primary__main--2 {
+        font-size: 3rem;
+    }
+
+    .heading-primary__sub {
         font-size: 1.3rem;
+        line-height: 3rem;
+        margin-top: 2rem;
     }
 
     // about
@@ -21,41 +31,20 @@
         padding: 2rem;
     }
 
-    
-
-    // programs page
-
-    .programs-wrapper {
-        padding: 2rem;
-    }
-
-    .skate-section__wrapper,
-    .hike-section__wrapper,
-    .run-section__wrapper {
-        grid-template-columns: 1fr;
-    }
-
-    .skate-section__img,
-    .hike-section__img,
-    .run-section__img {
-        height: 30rem;
-        order: -1;
-    }
-    
-    
-    
-
 
 }
 
 @include mediaMd {
-    .heading-primary__main--1,
+    .heading-primary__main--1 {
+        font-size: 8rem
+    }
+     
     .heading-primary__main--2 {
-        font-size: 7rem;
+        font-size: 5rem;
     }
 
-    .heading-primary__sub,
-    .heading-primary__determiner {
+    .heading-primary__sub {
+        margin-top: 2rem;
         font-size: 1.8rem;
     }
 
@@ -74,22 +63,6 @@
         
     }
 
-    // programs page
-
-    .skate-section__wrapper,
-    .hike-section__wrapper,
-    .run-section__wrapper {
-        grid-template-columns: 1fr;
-    }
-
-    
-
-    .skate-section__img,
-    .hike-section__img,
-    .run-section__img {
-        height: 30rem;
-        order: -1;
-    }
     
 
     
@@ -97,13 +70,19 @@
 }
 
 @include mediaLg {
-    .heading-primary__main--1,
-    .heading-primary__main--2 {
-        font-size: 10rem;
+    .heading-primary__main--1 {
+        font-size: 12rem;
     }
+
+    .heading-primary__main--2 {
+        font-size: 7rem;
+    }
+
+
 
     .heading-primary__sub {
         font-size: 2rem;
+        margin-top: 2rem;
     }
 
     .wrapper {
@@ -111,38 +90,23 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    // programs page
-
-    .skate-section__wrapper,
-    .run-section__wrapper {
-        grid-template-columns: 2fr 1.5fr;
-    }
-
-    .hike-section__wrapper {
-        grid-template-columns: 1.5fr 2fr;
-    }
-
-    .hike-section__paragraph,
-    .skate-section__paragraph,
-    .run-section__paragraph {
-        font-size: 1.7rem;
-        line-height: 3rem;
-        margin-bottom: 2rem;
-        
-    }
+  
 
     
 }
 
 @include mediaXl {
 
-    .heading-primary__main--1,
+    .heading-primary__main--1 {
+        font-size: 18rem;
+    }
     .heading-primary__main--2 {
-        font-size: 15rem;
+        font-size: 11rem;
     }
 
     .heading-primary__sub {
         font-size: 3rem;
+        margin-top: 2rem;
     }
     .wrapper {
         display: grid;
@@ -154,16 +118,11 @@
     
 
     .contact__container {
-        margin: 8rem;
+        margin-top: 2rem;
     }
 
 
-    // programs page
-
-    .programs-wrapper {
-        padding: 10rem;
-        padding-top: 5rem;
-    }
+   
 
 
 }
